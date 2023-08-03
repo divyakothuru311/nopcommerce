@@ -17,7 +17,7 @@ pipeline {
         stage('vcs') {
             steps {
                 git url: 'https://github.com/divyakothuru311/nopcommerce.git',
-                    branch: 'develop'
+                    branch: 'master'
             }
                 
         }
@@ -44,6 +44,6 @@ pipeline {
             steps{
                 archiveArtifacts artifacts: '**/*.dll'
             }
-        }       
-    }
+        }
+    }
 }
