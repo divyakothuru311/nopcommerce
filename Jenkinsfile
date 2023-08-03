@@ -8,10 +8,10 @@ pipeline {
 
     
     }
-    tools {
-        jdk 'JDK_17'
+    // tools {
+    //     jdk 'JDK_17'
          
-    }
+    // }
 
     stages { 
         stage('vcs') {
